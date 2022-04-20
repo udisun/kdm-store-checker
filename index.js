@@ -10,9 +10,10 @@ const consola = require('consola');
     baseSiteUrl: `https://shop.kingdomdeath.com/`,
     startUrl: `https://shop.kingdomdeath.com/collections/expansions`,
     filePath: './images/',
-    concurrency: 10,//Maximum concurrent jobs. More than 10 is not recommended.Default is 3.
+    concurrency: 1,//Maximum concurrent jobs. More than 10 is not recommended.Default is 3.
     maxRetries: 3,//The scraper will try to repeat a failed request few times(excluding 404). Default is 5.
-    logPath: './logs/'//Highly recommended: Creates a friendly JSON for each operation object, with all the relevant data.
+    logPath: './logs/', //Highly recommended: Creates a friendly JSON for each operation object, with all the relevant data.
+    showConsoleLogs: false,
   }
 
 
